@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Minj | BCA 1st Sem Legend</title>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">ANKIT<span>.MINJ</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#stats">Stats</a>
+                <a href="#volleyball">Volleyball</a>
+                <a href="#quotes">Wisdom</a>
+                <a href="#game" class="btn-spike">Spike Game 🏐</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero-section">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <div class="hero-content">
+            <!-- Profile Image Container -->
+            <div class="profile-frame">
+                <div class="profile-glow"></div>
+                <div class="img-wrapper">
+                    <img src="ankit.jpg" alt="Ankit Minj" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'fallback-avatar\'>🏐</div>';">
+                </div>
+                <span class="badge-ace">ACE 🏐</span>
+            </div>
+
+            <!-- Batch Badge -->
+            <div class="badge-tag">
+                <span class="dot"></span>
+                <span>BCA 1st Sem • Official Brat</span>
+            </div>
+
+            <!-- Title -->
+            <h1 class="hero-title">
+                100% POSITIVE.<br>
+                <span class="gradient-text">200% OVERCONFIDENT.</span>
+            </h1>
+
+            <p class="hero-desc">
+                Meet <strong>Ankit Minj</strong>. When he’s not dominating the volleyball court with unmatched spikes, he’s radiating main character energy in the BCA class.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="btn-group">
+                <a href="#game" class="btn-primary">Test His Spikes 🏐</a>
+                <a href="#stats" class="btn-secondary">View Power Stats 📊</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="container">
+        <div class="section-header">
+            <h2>Unmatched Player Stats</h2>
+            <p>Scientifically measured level of confidence and court presence.</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="icon orange"><i class="fa-solid fa-bolt"></i></div>
+                <h3>9999%</h3>
+                <p>Self Confidence</p>
+                <div class="bar"><div class="fill bg-orange" style="width: 100%;"></div></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon yellow"><i class="fa-solid fa-face-smile-beam"></i></div>
+                <h3>100%</h3>
+                <p>Positive Vibes Only</p>
+                <div class="bar"><div class="fill bg-yellow" style="width: 100%;"></div></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon purple"><i class="fa-solid fa-volleyball"></i></div>
+                <h3>ACE LEVEL</h3>
+                <p>Volleyball Skill</p>
+                <div class="bar"><div class="fill bg-purple" style="width: 95%;"></div></div>
+            </div>
+
+            <div class="stat-card">
+                <div class="icon green"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3>BCA 1st Sem</h3>
+                <p>Classroom Presence</p>
+                <div class="bar"><div class="fill bg-green" style="width: 100%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volleyball Section -->
+    <section id="volleyball" class="container">
+        <div class="volleyball-card">
+            <div class="vb-text">
+                <span class="sub-tag">The Court Master</span>
+                <h2>Born To Jump, Built To Spike.</h2>
+                <p>In BCA 1st Semester, code is cool, but Ankit’s volleyball spikes are lethal. Whether serving aces or keeping team morale at an all-time high, his positivity carries the entire squad.</p>
+                <ul class="vb-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Unstoppable Jump Float Serve</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Zero hesitation in clutch moments</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Celebrates every point like a Championship Final</li>
+                </ul>
+            </div>
+            <div class="vb-icon-box">
+                <div class="spin-circle">
+                    <div class="ball-circle">
+                        <i class="fa-solid fa-volleyball"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section id="quotes" class="container text-center">
+        <h2>Ankit’s Wisdom Generator</h2>
+        <p class="sub-text">Click to receive a dose of 100% pure overconfidence.</p>
+
+        <div class="quote-card">
+            <i class="fa-solid fa-quote-left quote-icon"></i>
+            <p id="quoteText" class="quote-body">"Why overthink code errors when you can just spike the volleyball harder?"</p>
+            <button onclick="generateQuote()" class="btn-primary">Get More Wisdom 🔥</button>
+        </div>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="container text-center">
+        <div class="game-card">
+            <h2>Ankit's Spike Challenge 🏐</h2>
+            <p class="sub-text">Click the volleyball as fast as you can before it drops!</p>
+
+            <div class="score-board">
+                <div>
+                    <span>HYPE SCORE</span>
+                    <div id="gameScore" class="score-num orange">0</div>
+                </div>
+                <div>
+                    <span>TIME LEFT</span>
+                    <div id="gameTimer" class="score-num yellow">15s</div>
+                </div>
+            </div>
+
+            <div id="courtArea" class="court-area">
+                <button id="startBtn" onclick="startGame()" class="btn-primary">START MATCH 🚀</button>
+                <div id="ball" onclick="spikeBall()" class="ball-game">🏐</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Built with high energy for <strong>Ankit Minj</strong> • BCA 1st Sem Legend</p>
+    </footer>
+
+    <script>
+        const quotes = [
+            "\"Why overthink code errors when you can just spike the volleyball harder?\"",
+            "\"I don't lose matches, time just runs out.\"",
+            "\"Confidence level: Unlimited data with no low network.\"",
+            "\"If you think I'm overconfident, wait till you see my serve.\"",
+            "\"BCA 1st sem isn't ready for this level of positivity.\"",
+            "\"When in doubt, jump higher and hit harder!\""
+        ];
+
+        function generateQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            document.getElementById('quoteText').innerText = quotes[randomIndex];
+        }
+
+        let score = 0;
+        let timeLeft = 15;
+        let timerInterval;
+
+        function startGame() {
+            score = 0;
+            timeLeft = 15;
+            document.getElementById('gameScore').innerText = score;
+            document.getElementById('gameTimer').innerText = timeLeft + 's';
+            document.getElementById('startBtn').style.display = 'none';
+            
+            const ball = document.getElementById('ball');
+            ball.style.display = 'block';
+            moveBall();
+
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                document.getElementById('gameTimer').innerText = timeLeft + 's';
+                if (timeLeft <= 0) {
+                    endGame();
+                }
+            }, 1000);
+        }
+
+        function moveBall() {
+            const court = document.getElementById('courtArea');
+            const ball = document.getElementById('ball');
+            
+            const maxX = court.clientWidth - 70;
+            const maxY = court.clientHeight - 70;
+
+            const randomX = Math.floor(Math.random() * Math.max(10, maxX));
+            const randomY = Math.floor(Math.random() * Math.max(10, maxY));
+
+            ball.style.left = randomX + 'px';
+            ball.style.top = randomY + 'px';
+        }
+
+        function spikeBall() {
+            score += 10;
+            document.getElementById('gameScore').innerText = score;
+            moveBall();
+        }
+
+        function endGame() {
+            clearInterval(timerInterval);
+            const ball = document.getElementById('ball');
+            ball.style.display = 'none';
+            
+            const startBtn = document.getElementById('startBtn');
+            startBtn.style.display = 'inline-block';
+            startBtn.innerText = `REPLAY (Score: ${score})`;
+        }
+    </script>
+</body>
+</html>
